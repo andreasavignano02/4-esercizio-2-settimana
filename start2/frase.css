@@ -8,3 +8,39 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+
+
+#testoAlternato{
+    border: 1px solid black;
+    font-size: 2rem;
+    margin: 20px;
+    padding: 20px;
+}
+
+#paroladaruotare{
+    animation-name: paroladaruotare;
+    transform-origin: translate(200px) rotate(360deg);
+    color: #6B889F;
+}
+
+
+
+
+
+
+@keyframes paroladaruotare {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+
+
+
+
+
+
+
