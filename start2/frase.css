@@ -9,37 +9,116 @@
 */
 
 
-
 #testoAlternato{
     border: 1px solid black;
-    font-size: 2rem;
     margin: 20px;
     padding: 20px;
+    font-size: 2rem;
 }
 
-#paroladaruotare{
-    animation-name: paroladaruotare;
-    transform-origin: translate(200px) rotate(360deg);
-    color: #6B889F;
+.parole{
+    position: relative;
+}
+
+.parole i{
+    position: absolute;
+    margin-left: 5%;
+    top: -10px;
+}
+
+
+i :nth-child(1){
+    animation-name: animazione1 ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top: 50px;
+}
+
+i :nth-child(2){
+    animation-name: animazione2 ;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+i :nth-child(3){
+    animation-name: animazione3 ;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 
 
-
-
-
-@keyframes paroladaruotare {
+@keyframes animazione1 {
     0%{
-        rotate: 0deg;
+        color: #8298A7;
+        transform: translateY(0px);
+        
     }
+
+    
+    25%{
+        color: #8298A7;
+        
+    }
+    
+    
+    
+    50%{
+        color: #8298A7;
+        
+    
+    }
+
+
+    75%{
+        color: #8298A7;
+        
+    }
+
     100%{
-        rotate: 360deg;
+        color: #8298A7;
+        transform: translateY(50px);
     }
 }
 
 
 
 
+
+
+
+
+
+
+@keyframes animazione2 {
+    0%{
+        top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animazione3 {
+    0%{
+        top:50px;
+    }
+}
 
 
 
